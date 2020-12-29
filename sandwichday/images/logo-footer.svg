@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="257" height="140" viewBox="0 0 257 140">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1279" data-name="長方形 1279" width="122" height="83" transform="translate(173 3136)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle id="楕円形_230" data-name="楕円形 230" cx="41.5" cy="41.5" r="41.5" transform="translate(9.328 18.023)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="長方形_1280" data-name="長方形 1280" width="257" height="66" transform="translate(121 3255)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_1514" data-name="グループ 1514" transform="translate(-116 -3198)">
+    <text id="_-カスタムサンドウィッチカフェ-" data-name="-カスタムサンドウィッチカフェ-" transform="translate(140 3336)" fill="#ea5520" font-size="14" font-family="MS-Gothic, MS Gothic"><tspan x="0" y="0">-カスタムサンドウィッチカフェ-</tspan></text>
+    <g id="マスクグループ_8" data-name="マスクグループ 8" transform="translate(11 62)" clip-path="url(#clip-path)">
+      <g id="レイヤー_2" data-name="レイヤー 2" transform="translate(183.172 3117.977)">
+        <g id="店舗情報">
+          <g id="グループ_1504" data-name="グループ 1504" clip-path="url(#clip-path-2)">
+            <path id="パス_828" data-name="パス 828" d="M50.854,1.317l49.721,86.109H1.146Z" fill="none" stroke="#f6d60f" stroke-miterlimit="10" stroke-width="1.317"/>
+            <path id="パス_829" data-name="パス 829" d="M50.854,19.5,85.661,79.785H16.06Z" fill="#fff" stroke="#ea5520" stroke-miterlimit="10" stroke-width="1.304"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="マスクグループ_9" data-name="マスクグループ 9" transform="translate(-5 10)" clip-path="url(#clip-path-3)">
+      <g id="レイヤー_2-2" data-name="レイヤー 2" transform="translate(122 3267.435)">
+        <g id="店舗情報-2" data-name="店舗情報">
+          <text id="SandwichDay" transform="translate(0 38.065)" fill="#ea5520" font-size="45" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="-0.05em"><tspan x="0" y="0">Sandwic</tspan><tspan y="0" letter-spacing="0.08em">h</tspan><tspan y="0">Day</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
