@@ -1,0 +1,14 @@
+<svg id="コンポーネント_45_2" data-name="コンポーネント 45 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="25" viewBox="0 0 27 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1291" data-name="長方形 1291" width="27" height="25" transform="translate(925.701 102.087)" stroke="#ff0808" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_20" data-name="マスクグループ 20" transform="translate(-925.701 -102.087)" clip-path="url(#clip-path)">
+    <g id="カートのアイコン素材" transform="translate(927.254 102)">
+      <path id="パス_846" data-name="パス 846" d="M20.445,0,19.28,4.513H1.042L4.435,16.289H16.241l-.426,1.649H5.262v1.736h11.9L21.789,1.736h3.147V0ZM14.521,14.553V11.226h3.027l-.859,3.327Zm4.311-8.3L18,9.49H14.521V6.249Zm-6.047,4.977v3.327H9.359V11.226Zm0-4.977V9.49H9.359V6.249Zm-5.162,0V9.49H4.283L3.349,6.249Zm0,4.977v3.327H5.742l-.959-3.327Z" transform="translate(-1.042)" stroke="#707070" stroke-width="0.08"/>
+      <path id="パス_847" data-name="パス 847" d="M9.148,33.235a2.335,2.335,0,1,0,2.335,2.335A2.337,2.337,0,0,0,9.148,33.235Zm0,2.933a.6.6,0,1,1,.6-.6A.6.6,0,0,1,9.148,36.169Z" transform="translate(-3.27 -12.829)" stroke="#707070" stroke-width="0.08"/>
+      <path id="パス_848" data-name="パス 848" d="M22.525,33.395a2.335,2.335,0,1,0,2.335,2.335A2.337,2.337,0,0,0,22.525,33.395Zm0,2.934a.6.6,0,1,1,.6-.6A.6.6,0,0,1,22.525,36.328Z" transform="translate(-8.434 -12.891)" stroke="#707070" stroke-width="0.08"/>
+    </g>
+  </g>
+</svg>

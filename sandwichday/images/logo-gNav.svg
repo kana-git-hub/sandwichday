@@ -1,0 +1,64 @@
+<svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="60" viewBox="0 0 200 60">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #ebce26;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #de5524;
+        stroke-width: 0.99px;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8 {
+        isolation: isolate;
+      }
+
+      .cls-6, .cls-7, .cls-8 {
+        font-size: 20.15px;
+        fill: #de5524;
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0.08em;
+      }
+
+      .cls-8 {
+        letter-spacing: -0.05em;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="31.66" cy="32.75" r="18.34"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g>
+      <polygon class="cls-3" points="31.68 7.03 53.64 45.08 9.71 45.08 31.68 7.03"/>
+      <polygon class="cls-4" points="31.68 15.06 47.05 41.7 16.3 41.7 31.68 15.06"/>
+    </g>
+  </g>
+  <g class="cls-5">
+    <text class="cls-6" transform="translate(57.75 35.89) scale(1.2 1)">Sandwic</text>
+    <text class="cls-7" transform="translate(140.69 35.89) scale(1.2 1)">h</text>
+    <text class="cls-8" transform="translate(156.02 35.89) scale(1.2 1)">Day</text>
+  </g>
+</svg>

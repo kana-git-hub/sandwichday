@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="keywords" content="#######">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SandwichDay | カスタムサンドウィッチカフェ | ご注文</title>
+  <meta name="description" content="########">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="webclip.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+
+<body class="order">
+  <div class="wrapper">
+    <header>
+      <nav class="clearfix">
+        <p class="logo">
+          <a href="index.html">
+            <img src="images/logo-gNav.svg" width="200" height="60" alt="#">
+          </a>
+        </p>
+        <ul>
+          <li class="main1"><a href="menu.html">メニュー</a>
+            <ul>
+              <li class="sub1"><a href="order.html">ご注文</a></li>
+            </ul>
+          </li>
+          <li><a href="fussy.html">こだわり</a></li>
+          <li><a href="store.html">店舗情報</a></li>
+          <li><a href="qa.html">よくあるご質問</a></li>
+          <li class="separator cart"><a href="#">カートを見る</a></li>
+          <li class="separator"><a href="#">ログイン</a></li>
+          <li class="separator"><a href="#">会員登録</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-wrap">
+        <section class="order-box">
+          <h2>カスタムサンドウィッチご注文方法</h2>
+          <div class="tab-wrap clearfix">
+    <input id="tab1" type="radio" name="tab-btn" checked>
+    <input id="tab2" type="radio" name="tab-btn">
+            
+    <div class="tab-area">
+      <label class="tab1-label" for="tab1">はじめにパンメニューをお選びください<span class="arrow tab-arrow"></span></label>
+      <label class="tab2-label" for="tab2">次にトッピングをお選びください<span class="arrow tab-arrow"></span></label>
+      
+    </div><!--/tab-area-->
+
+    <div class="order-left">
+      <img src="images/plate.png" width="468" height="468" alt="#" id="plate">
+      <div id="topping-01">
+        <img src="images/topping-pan.png" width="335" height="335" alt="#" id="pan">
+        <img src="images/topping-leaf.png" width="335" height="335" alt="#" id="leaf">
+        <img src="images/topping-tomato.png" width="335" height="335" alt="#" id="tomato">
+        <img src="images/topping-cucumber.png" width="335" height="335" alt="#" id="cucumber">
+        <img src="images/topping-chicken.png" width="335" height="335" alt="#" id="chicken">
+        <img src="images/topping-avo.png" width="335" height="335" alt="#" id="avo">
+        <img src="images/topping-beef.png" width="335" height="335" alt="#" id="beef">
+        <img src="images/topping-egg.png" width="335" height="335" alt="#" id="egg">
+      </div>
+    </div><!--/order-left-->
+
+    <div class="panel-area">
+      <div id="panel1" class="tab-panel">
+        <div class="custom-content">
+          <p class="panel-01-title"><span>1.&nbsp;</span>パンメニュー&nbsp;</p>
+          <div class="topping-box">
+            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="thum-pan">
+            <p>全粒粉パン</p>
+          </div><!--/topping-box-->
+          <div class="topping-box">
+            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
+            <p>全粒粉パン</p>
+          </div>
+          <!--/topping-box-->
+          <div class="topping-box">
+            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
+            <p>全粒粉パン</p>
+          </div>
+          <!--/topping-box-->
+          <div class="topping-box">
+            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
+            <p>全粒粉パン</p>
+          </div>
+          <!--/topping-box-->
+          <div class="topping-box">
+            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
+            <p>全粒粉パン</p>
+          </div><!--/topping-box-->
+        </div><!--/custom-content-->
+
+        <div class="total-price">
+          <p class="price">TOTAL<br>¥<span>100</span></p>
+        </div><!--/total-price-->
+      </div><!--/panel1-->
+
+      <div id="panel2" class="tab-panel">
+        <div class="custom-content">
+          <p class="panel-02-title"><span>1.&nbsp;</span>野菜トッピング&nbsp;</p>
+
+          <div class="vege-topping">
+            <input id="leaf-btn" type="radio" name="vege-topping" value="1">
+            <label for="leaf-btn">
+              <div class="topping-box flex-item">
+                <img src="images/topping-leaf.png" width="100" height="100" alt="#" id="thum-leaf">
+              <p>レタス</p>
+              </div><!--/topping-box-->
+            </label>
+            <input id="cucumber-btn" type="radio" name="vege-topping" value="2">
+            <label for="cucumber-btn">
+              <div class="topping-box flex-item">
+                  <img src="images/topping-cucumber.png" width="100" height="100" alt="#" id="thum-cucumber">
+                <p>きゅうり</p>
+              </div><!--/topping-box-->
+            </label>
+
+            <input id="tomato-btn" type="radio" name="vege-topping" value="3">
+            <label for="tomato-btn">
+              <div class="topping-box flex-item">
+                <img src="images/topping-tomato.png" width="100" height="100" alt="#" id="thum-tomato">
+                <p>トマト</p>
+              </div><!--/topping-box-->
+            </label>
+          </div><!--/vege-->
+
+          <p class="panel-02-title"><span>2.&nbsp;</span>メイントッピング&nbsp;</p>
+          <div class="main-topping">
+            <input id="chicken-btn" type="radio" name="main-topping" value="4">
+            <label for="chicken-btn">
+              <div class="topping-box">
+                <img src="images/topping-chicken.png" width="100" height="100" alt="#" id="thum-chicken">
+                <p>サラダチキン</p>
+              </div><!--/topping-box-->
+            </label>
+            <input id="beef-btn" type="radio" name="main-topping" value="5">
+            <label for="beef-btn">
+            <div class="topping-box">
+              <img src="images/topping-beef.png" width="100" height="100" alt="#" id="thum-beef">
+              <p>ローストビーフ</p>
+            </div><!--/topping-box-->
+            </label>
+          </div><!--/main-topping-->
+
+          <p class="panel-02-title"><span>3.&nbsp;</span>サイドトッピング&nbsp;</p>
+          <div class="side-topping">
+            <input id="egg-btn" type="radio" name="side-topping" value="6">
+            <label for="egg-btn">
+            <div class="topping-box">
+              <img src="images/topping-egg.png" width="100" height="100" alt="#" id="thum-egg">
+              <p>卵</p>
+            </div><!--/topping-box-->
+            </label>
+            <input id="avo-btn" type="radio" name="side-topping" value="7">
+            <label for="avo-btn">
+            <div class="topping-box">
+              <img src="images/topping-avo.png" width="100" height="100" alt="#" id="thum-avo">
+              <p>アボカド</p>
+            </div><!--/topping-box-->
+            </label>
+          </div><!--/side-topping-->
+
+        </div><!--/custom-content-->
+        <div class="total-price">
+          <form action="sample.cgi" method="post">
+            <p class="price">TOTAL<br>¥<span>100</span></p>
+            数量<input type="number" class="number">
+            <input type="image" name="photo" src="images/order-cartIn.svg" width="300" height="47" alt="カートに入れるボタン">
+          </form>
+        </div><!--/total-price-->
+      </div><!--/panel2-->
+    </div><!--/panel-area-->
+  </div><!--/tab-wrap-->
+
+
+
+
+
+
+
+
+          <div class="return">
+            <p><a href="order.html" class="arrow back-arrow">初めから注文しなおす</a></p>
+            <p><a href="menu.html" class="arrow back-arrow">グランドメニューを注文する</a></p>
+          </div><!--/return-->
+        </section><!--/concept-->
+      </div><!--/container-wrap-->
+    </main>
+    <footer>
+      <div class="footer-box">
+        <div class="footer-left">
+          <address>
+            <p>〒03-1234-5678</p>
+            <p>東京都千代田区丸の内1-9-2000<a href="#"><span>(Google Map)</span></a></p>
+            <p>TEL : 03-1234-5678</p>
+          </address>
+          <ul class="socials">
+            <li><a href="#"><i class="fab fa-facebook-f fa-2x facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-2x twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-2x insta"></i></a></li>
+          </ul>
+        </div>
+        <!--/footer-left-->
+
+        <div class="footer-center">
+          <img src="images/logo-footer.svg" width="257" height="140" alt="#">
+        </div>
+        <!--/footer-center-->
+
+        <div class="footer-right">
+          <ul>
+            <li><a href="#">サイトマップ</a></li>
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <!--/footer-right-->
+      </div>
+      <!--/footer-box-->
+      <p class="copy"><small>&copy;2020 SandwichDay.</small></p>
+    </footer>
+  </div>
+  <!--/wrapper-->
+
+</body>
+
+</html>
