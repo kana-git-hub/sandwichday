@@ -597,16 +597,11 @@ input[type="radio"] {
   font-size: 0.875em;
   background: rgba(53, 37, 19, 0.7);
   padding: 3%;
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  align-items: baseline;*/
-/*  justify-content: center;*/
 }
 
 .total-price .price {
-/*  flex-basis: 50%;*/
   letter-spacing: 1px;
-  background: pink;
+  width: 30%;
 }
 
 .total-price .price span {
@@ -614,11 +609,7 @@ input[type="radio"] {
 }
 
 .total-price .number {
-  background: tomato;
-}
-
-.total-price input[type="image"]{
-  background: pink;
+/*  background: tomato;*/
 }
 
 /* パンメニューパネル
@@ -630,7 +621,7 @@ input[type="radio"] {
 }
 
 .panel-01-title span {
-  font-size: 2em;
+  font-size: 1em;
   color: #00b901;
 }
 
@@ -660,6 +651,11 @@ input[type="radio"] {
   width: 100%;
   max-width: 150px;
   height: auto;
+  opacity: 0.8;
+}
+
+#panel1 .topping-box img:hover {
+  opacity: 1;
 }
 
 /* トッピングメニューパネル
@@ -670,7 +666,7 @@ input[type="radio"] {
 }
 
 .panel-02-title span {
-  font-size: 2em;
+  font-size: 1em;
   color: #00b901;
 }
 
@@ -699,6 +695,9 @@ input[type="radio"] {
   height: auto;
 }
 
+#panel2 .topping-box:hover {
+  opacity: 1;
+}
 
 .vege-topping,
 .main-topping,
@@ -707,9 +706,6 @@ input[type="radio"] {
   justify-content: center;
 }
 
-.topping-box:hover {
-  background: tomato;
-}
 
 .return {
   margin: 0 auto;
