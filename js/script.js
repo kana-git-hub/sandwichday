@@ -2,9 +2,22 @@ $(function(){
     $('#topping-01 img')
       .fadeOut( 0 );
   
-    $('#thum-pan')
+    $('#thum-pan-brown')
       .click(function(){
-    $('#pan')
+    $('#pan-brown')
+      .fadeIn( 0 );
+      console.log( "price : " + price );
+  });
+  
+    $('#thum-pan-white')
+      .click(function(){
+    $('#pan-white')
+      .fadeIn( 0 );
+  });
+  
+    $('#thum-pan-low')
+      .click(function(){
+    $('#pan-low')
       .fadeIn( 0 );
   });
   
@@ -63,7 +76,9 @@ $(function(){
   
   
   
+
   
+
   $( 'input[name="vege-topping"]:radio' ).change( function() {
 
       var radioval = $(this).val();
@@ -97,6 +112,20 @@ $(function(){
       }
       if(radioval == 7){
          $('#egg').fadeOut( 0 );
+      }
+   });
+  
+      $( 'input[name="pan"]:radio' ).change( function() {
+
+      var radioval = $(this).val();
+      if(radioval == 8){
+         $('#pan-brown,#pan-low').fadeOut( 0 );
+      }
+      if(radioval == 9){
+         $('#pan-white,#pan-low').fadeOut( 0 );
+      }
+      if(radioval == 10){
+         $('#pan-white,#pan-brown').fadeOut( 0 );
       }
    });
   

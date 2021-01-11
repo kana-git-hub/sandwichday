@@ -1,3 +1,12 @@
+//<?php var_dump( $_POST ); ?>
+
+<?php
+  $pan_white = 500;
+  $pan_brown = 1000;
+  $pan_low = 100;
+  $total =2000;
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -15,7 +24,6 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="jquery-3.5.1.min.js"></script>
-  <script src="js/script.js"></script>
 </head>
 
 
@@ -61,7 +69,9 @@
     <div class="order-left">
       <p><img src="images/plate.png" width="468" height="468" alt="お皿" id="plate"></p>
       <div id="topping-01">
-        <img src="images/topping-pan.png" width="335" height="335" alt="全粒粉パン" id="pan">
+        <img src="images/topping-pan.png" width="335" height="335" alt="全粒粉パン" id="pan-brown">
+        <img src="images/topping-pan_white.png" width="335" height="335" alt="食パン" id="pan-white">
+        <img src="images/topping-pan_low.png" width="335" height="335" alt="低糖質パン" id="pan-low">
         <img src="images/topping-leaf.png" width="335" height="335" alt="レタス" id="leaf">
         <img src="images/topping-tomato.png" width="335" height="335" alt="トマト" id="tomato">
         <img src="images/topping-cucumber.png" width="335" height="335" alt="きゅうり" id="cucumber">
@@ -76,32 +86,34 @@
       <div id="panel1" class="tab-panel">
         <div class="custom-content">
           <p class="panel-01-title"><span>1.&nbsp;</span>パンメニュー&nbsp;</p>
-          <div class="topping-box">
-            <img src="images/topping-pan.png" width="100" height="100" alt="全粒粉パン" id="thum-pan">
-            <p>全粒粉パン</p>
-          </div><!--/topping-box-->
-          <div class="topping-box">
-            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
-            <p>全粒粉パン</p>
-          </div>
-          <!--/topping-box-->
-          <div class="topping-box">
-            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
-            <p>全粒粉パン</p>
-          </div>
-          <!--/topping-box-->
-          <div class="topping-box">
-            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
-            <p>全粒粉パン</p>
-          </div>
-          <!--/topping-box-->
-          <div class="topping-box">
-            <img src="images/topping-pan.png" width="100" height="100" alt="#" id="">
-            <p>全粒粉パン</p>
-          </div><!--/topping-box-->
+          <form>
+            <div class="topping-box">
+              <input id="pan-white-btn" type="radio" name="pan" value="8" onclick="priceShow()">
+              <label for="pan-white-btn">
+              <img src="images/topping-pan_white.png" width="100" height="100" alt="#" id="thum-pan-white">
+              <p>食パン</p>
+              </label>
+            </div><!--/topping-box-->
+            <div class="topping-box">
+              <input id="pan-brown-btn" type="radio" name="pan" value="9">
+              <label for="pan-brown-btn">
+              <img src="images/topping-pan.png" width="100" height="100" alt="全粒粉パン" id="thum-pan-brown">
+              <p>全粒粉パン</p>
+              </label>
+            </div>
+            <!--/topping-box-->
+            <div class="topping-box">
+              <input id="pan-low-btn" type="radio" name="pan" value="10">
+              <label for="pan-low-btn">
+              <img src="images/topping-pan_low.png" width="100" height="100" alt="#" id="thum-pan-low">
+              <p>低糖質パン</p>
+              </label>
+            </div><!--/topping-box-->
+          </form>
         </div><!--/custom-content-->
+        
         <div class="total-price-box">
-          <p class="price">TOTAL<br>¥<span id="price"></span></p>
+          <p class="price">TOTAL<br>¥<span id="price"><?php echo $price?></span></p>
         </div><!--/total-price-box-->
       </div><!--/panel1-->
 
@@ -176,16 +188,7 @@
             <div class="price">TOTAL￥:
               
               
-            <?php $total =2000;?>
-              
-            <?php
-              $var = $total;
-            ?>
-              
-              
-              
-            <?php echo $total ?>
-              
+
               
             </div>
             <input type="hidden" name="toral">
@@ -245,7 +248,7 @@
       <p class="copy"><small>&copy;2020 SandwichDay.</small></p>
     </footer>
   </div><!--/wrapper-->
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

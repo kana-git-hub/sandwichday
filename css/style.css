@@ -3,7 +3,7 @@
 /* 全体、幅の設定
 -------------------------------------------*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .wrapper {
@@ -460,7 +460,7 @@ footer address span {
 /* order.html
 -------------------------------------------*/
 .tab-wrap {
-  height: 535px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -499,21 +499,16 @@ input[type="radio"] {
 .panel-area {
   background: #fff;
   width: 50%;
-/*  float: right;*/
 }
 
 .order-left {
   width: 50%;
-/*  float: left;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  background: pink;
 }
 
 .order-left p {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
 }
@@ -522,20 +517,7 @@ input[type="radio"] {
   width: 100%;
   max-width: 380px;
   height: auto;
-/*  position: relative;*/
-/*
-  left: 0;
-  top: 0;
-*/
   z-index: 1;
-}
-
-#topping-01 {
-/*
-  display: flex;
-  align-items: center;
-  justify-content: center;
-*/
 }
 
 .order-left #topping-01 img {
@@ -543,7 +525,7 @@ input[type="radio"] {
   height: auto;
   position: absolute;
   left: 60px;
-  top: 0;
+  top: 40px;
   z-index: 2;
 }
 
@@ -572,16 +554,23 @@ input[type="radio"] {
   box-shadow: 0 0 3px rgba(0, 0, 0, .2);
 }
 
+.tab-area:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: rgb(234, 85, 32);
+}
 
 .total-price-box {
 /*  line-height: 25px;*/
+  height: 110px;
   background: rgba(53, 37, 19, 0.7);
   padding: 3%;
 }
 
 .total-price-box .price {
   font-size: 0.875em;
-  font-weight: bold;
   letter-spacing: 1px;
   width: 100%;
   background: pink;
@@ -664,7 +653,6 @@ input[type="radio"] {
   justify-content: space-around;
 }
 
-
 /* return
 ----------------------------------------*/
 .return {
@@ -700,14 +688,6 @@ input[type="radio"] {
   border: 4px solid transparent;
   border-right: 4px solid #ea5520;
   box-sizing: border-box;
-}
-
-.tab-area:after {
-  content: '';
-  width: 100%;
-/*  height: 10px;*/
-  background: rgb(234, 85, 32);
-  display: block;
 }
 
 .arrow {

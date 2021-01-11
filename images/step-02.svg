@@ -14,23 +14,15 @@
         stroke: #fff;
       }
 
-      .cls-2, .cls-4 {
+      .cls-2 {
         stroke-miterlimit: 10;
       }
 
-      .cls-3, .cls-4 {
-        fill: none;
-      }
-
       .cls-3 {
+        fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 8.5px;
-      }
-
-      .cls-4 {
-        stroke: #2bac38;
-        stroke-width: 2.83px;
       }
     </style>
   </defs>
@@ -42,6 +34,5 @@
     <polyline class="cls-3" points="151.12 86 151.12 68 58.88 68 58.88 176.37 151.12 176.37 151.12 145.12"/>
     <path class="cls-2" d="M173.11,96.42l-4.4-4.4A6.84,6.84,0,0,0,159,92l-4.12,4.12L169,110.23l4.12-4.12A6.84,6.84,0,0,0,173.11,96.42Z"/>
     <polygon class="cls-2" points="116.27 134.78 116.27 148.86 130.36 148.86 165.15 114.07 151.06 99.98 116.27 134.78"/>
-    <line class="cls-4" x1="90.59" y1="46.25" x2="129.41" y2="46.25"/>
   </g>
 </svg>

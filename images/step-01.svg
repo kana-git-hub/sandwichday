@@ -10,7 +10,7 @@
         fill: #fff;
       }
 
-      .cls-2, .cls-5, .cls-6 {
+      .cls-2, .cls-5 {
         fill: none;
       }
 
@@ -27,7 +27,7 @@
         stroke-width: 8.5px;
       }
 
-      .cls-3, .cls-5, .cls-6 {
+      .cls-3, .cls-5 {
         stroke-width: 2.83px;
       }
 
@@ -38,11 +38,6 @@
       .cls-5 {
         stroke: #231815;
       }
-
-      .cls-6 {
-        stroke: #2bac38;
-        stroke-miterlimit: 10;
-      }
     </style>
   </defs>
   <text class="cls-1" transform="translate(39.97 31.64)">STEP 01</text>
@@ -52,5 +47,4 @@
   <rect class="cls-4" x="78" y="129.37" width="25" height="25"/>
   <rect class="cls-4" x="117" y="129.37" width="25" height="25"/>
   <polyline class="cls-5" points="82.33 100.75 88.58 108.08 99 95.92"/>
-  <line class="cls-6" x1="90.59" y1="46.25" x2="129.41" y2="46.25"/>
 </svg>
