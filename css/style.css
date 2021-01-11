@@ -7,8 +7,9 @@ body {
 }
 
 .wrapper {
-  background-color: #efefef;
+  background-color: #fcfcfc;
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -447,11 +448,11 @@ footer address span {
   font-size: 0.8em;
 }
 
-.kcal::before {
+.menu-item .kcal::before {
   content: "/";
 }
 
-.price,
+.menu-item .price,
 .kcal {
   display: inline-block;
 }
@@ -459,6 +460,7 @@ footer address span {
 /* order.html
 -------------------------------------------*/
 .tab-wrap {
+  height: 535px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -497,13 +499,19 @@ input[type="radio"] {
 .panel-area {
   background: #fff;
   width: 50%;
-  float: right;
+/*  float: right;*/
 }
 
 .order-left {
   width: 50%;
-  height: 550px;
-  float: left;
+/*  float: left;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.order-left p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,23 +519,31 @@ input[type="radio"] {
 }
 
 #plate {
-  z-index: 1;
   width: 100%;
-  max-width: 468px;
+  max-width: 380px;
   height: auto;
+/*  position: relative;*/
+/*
+  left: 0;
+  top: 0;
+*/
+  z-index: 1;
 }
 
 #topping-01 {
+/*
   display: flex;
   align-items: center;
   justify-content: center;
+*/
 }
 
 .order-left #topping-01 img {
-  width: 75%;
+  width: 70%;
   height: auto;
   position: absolute;
   left: 60px;
+  top: 0;
   z-index: 2;
 }
 
@@ -556,157 +572,101 @@ input[type="radio"] {
   box-shadow: 0 0 3px rgba(0, 0, 0, .2);
 }
 
-.tab-area:after {
-  content: '';
-  width: 100%;
-  height: 10px;
-  background: rgb(234, 85, 32);
-  display: block;
-}
 
-.arrow {
-  position: relative;
-  display: inline-block;
-  padding: 0 0 0 16px;
-  vertical-align: middle;
-}
-
-.arrow::before,
-.arrow::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  content: "";
-  vertical-align: middle;
-}
-
-.tab-arrow::before {
-  left: 16px;
-  box-sizing: border-box;
-  width: 4px;
-  height: 4px;
-  border: 4px solid transparent;
-  border-left: 4px solid #fff;
-}
-
-.total-price {
-  line-height: 25px;
-  color: #fff;
-  font-size: 0.875em;
+.total-price-box {
+/*  line-height: 25px;*/
   background: rgba(53, 37, 19, 0.7);
   padding: 3%;
 }
 
-.total-price .price {
+.total-price-box .price {
+  font-size: 0.875em;
+  font-weight: bold;
   letter-spacing: 1px;
-  width: 30%;
+  width: 100%;
+  background: pink;
 }
 
-.total-price .price span {
+.total-price-box .price span {
   font-size: 1.25em;
 }
 
-.total-price .number {
+.total-price-box .number {
 /*  background: tomato;*/
 }
 
-/* パンメニューパネル
+/* panel-common
 ----------------------------------------*/
-.panel-01-title {
+.panel-01-title,
+.panel-02-title{
   width: 100%;
   font-size: 1.5em;
   font-weight: bold;
+  margin-bottom: 3%;
 }
 
-.panel-01-title span {
+.panel-01-title span,
+.panel-02-title span{
   font-size: 1em;
   color: #00b901;
 }
 
-.panel-01-title:after {
+.panel-01-title:after,
+.panel-02-title:after{
   content: "※おひとつお選びください";
   font-size: 0.8em;
 }
 
 #panel1 .custom-content {
-  background: #352513;
-  padding: 30px;
-  color: #fff;
-  font-size: 0.75em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#panel1 .topping-box {
+#panel1 .custom-content,
+#panel2 .custom-content{
+  background: #352513;
+  padding: 30px;
+  color: #fff;
+  font-size: 0.75em;
+}
+
+#panel1 .topping-box,
+#panel2 .topping-box{
   cursor: pointer;
   margin-bottom: 4%;
   text-align: center;
   margin-right: 5%;
+  width: 110px;
 }
 
-#panel1 .topping-box img {
+#panel1 .topping-box img,
+#panel2 .topping-box img{
   width: 100%;
   max-width: 150px;
   height: auto;
   opacity: 0.8;
 }
 
-#panel1 .topping-box img:hover {
+#panel1 .topping-box img:hover,
+#panel2 .topping-box :hover{
   opacity: 1;
 }
 
 /* トッピングメニューパネル
 ----------------------------------------*/
-.panel-02-title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.panel-02-title span {
-  font-size: 1em;
-  color: #00b901;
-}
-
-.panel-02-title:after {
-  content: "※おひとつお選びください";
-  font-size: 0.8em;
-}
-
-#panel2 .custom-content {
-  background: #352513;
-  padding: 30px;
-  color: #fff;
-  font-size: 0.75em;
-}
-
-#panel2 .topping-box {
-  cursor: pointer;
-  margin-bottom: 4%;
-  text-align: center;
-  margin-right: 10%;
-}
-
-#panel2 .topping-box img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-}
-
-#panel2 .topping-box:hover {
-  opacity: 1;
-}
-
 .vege-topping,
 .main-topping,
 .side-topping {
+  margin: 0 auto;
+  max-width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
+/* return
+----------------------------------------*/
 .return {
   margin: 0 auto;
   text-align: center;
@@ -741,6 +701,43 @@ input[type="radio"] {
   border-right: 4px solid #ea5520;
   box-sizing: border-box;
 }
+
+.tab-area:after {
+  content: '';
+  width: 100%;
+/*  height: 10px;*/
+  background: rgb(234, 85, 32);
+  display: block;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  vertical-align: middle;
+}
+
+.arrow::before,
+.arrow::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.tab-arrow::before {
+  left: 16px;
+  box-sizing: border-box;
+  width: 4px;
+  height: 4px;
+  border: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+
+
 
 /* fussy.html
 -------------------------------------------*/

@@ -270,28 +270,23 @@ html[xmlns] .flexslider .slides {
 
 
 
-/* 以下　上書き用に書き換え済み
+/* 以下上書き用に書き換え
 ---------------------------------*/
-
-
-.flexslider .slides img  {
-/*  margin-top: 10px;*/
-}
 ol.flex-control-thumbs {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   margin: 0 auto;
 }
 ol.flex-control-thumbs li {
   flex: auto;
   height: auto;
-  margin: 5px;
+  margin: 10px;
 }
 .flex-control-thumbs {
   margin: 0
 }
 .flex-control-thumbs img {
-  width: auto;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 20%;
@@ -329,4 +324,9 @@ ol.flex-control-thumbs li {
 
 .flex-control-thumbs li {
   width: auto;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  height: auto;
 }

@@ -59,7 +59,7 @@
     </div><!--/tab-area-->
 
     <div class="order-left">
-      <img src="images/plate.png" width="468" height="468" alt="お皿" id="plate">
+      <p><img src="images/plate.png" width="468" height="468" alt="お皿" id="plate"></p>
       <div id="topping-01">
         <img src="images/topping-pan.png" width="335" height="335" alt="全粒粉パン" id="pan">
         <img src="images/topping-leaf.png" width="335" height="335" alt="レタス" id="leaf">
@@ -100,9 +100,9 @@
             <p>全粒粉パン</p>
           </div><!--/topping-box-->
         </div><!--/custom-content-->
-        <div class="total-price">
-          <p class="price">TOTAL<br>¥<span>100</span></p>
-        </div><!--/total-price-->
+        <div class="total-price-box">
+          <p class="price">TOTAL<br>¥<span id="price"></span></p>
+        </div><!--/total-price-box-->
       </div><!--/panel1-->
 
       <div id="panel2" class="tab-panel">
@@ -170,12 +170,35 @@
           </div><!--/side-topping-->
 
         </div><!--/custom-content-->
-        <div class="total-price">
-          <form action="sample.cgi" method="post">
-            <p class="price">TOTAL<br>¥<span>100</span></p>
-            数量<input type="number" class="number">
+        <div class="total-price-box">
+          
+          <form action="2.php" method="post">
+            <div class="price">TOTAL￥:
+              
+              
+            <?php $total =2000;?>
+              
+            <?php
+              $var = $total;
+            ?>
+              
+              
+              
+            <?php echo $total ?>
+              
+              
+            </div>
+            <input type="hidden" name="toral">
+            
+            数量：<input type="number" name="number" class="number">
+            
+            
+            
             <input type="image" name="photo" src="images/order-cartIn.svg" width="300" height="47" alt="カートに入れるボタン">
+<!--                <input type="submit" name="photo" src="images/order-cartIn.svg" width="300" height="47" alt="カートに入れるボタン" value="カートに入れる">-->
           </form>
+          
+          
         </div><!--/total-price-->
       </div><!--/panel2-->
             </div><!--/panel-area-->
