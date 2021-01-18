@@ -1,10 +1,12 @@
-//<?php var_dump( $_POST ); ?>
-
 <?php
   $pan_white = 500;
-  $pan_brown = 1000;
-  $pan_low = 100;
-  $total =2000;
+  $pan_brown = 300;
+  $pan_low = 400;
+
+  $pan_leaf = 5;
+
+  $total = 0;
+//  $total = $pan_white + $pan_brown + $pan_low;
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +26,29 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="jquery-3.5.1.min.js"></script>
+  
+  <script> //クリックしたトッピングの金額をcheck.phpに送る
+  $(function(){
+      $('#thum-pan-white')
+        .click(function(){
+        $('#price').html('<?php echo $total += $pan_white; ?>');
+    });
+      $('#thum-pan-brown')
+        .click(function(){
+        $('#price').html('<?php echo $total += $pan_brown; ?>');
+    });
+      $('#thum-pan-low')
+        .click(function(){
+        $('#price').html('<?php echo $total += $pan_low; ?>');
+    });
+    
+      $('#thum-leaf')
+        .click(function(){
+        $('#price').append('<?php echo $pan_leaf; ?>');
+      });
+    });
+    
+</script>
 </head>
 
 
@@ -32,19 +57,19 @@
     <header>
       <nav class="clearfix">
         <p class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img src="images/logo-gNav.svg" width="200" height="60" alt="SandwichDay（サンドウィッチディ）">
           </a>
         </p>
         <ul>
-          <li class="main1"><a href="menu.html">メニュー</a>
+          <li class="main1"><a href="menu.php">メニュー</a>
             <ul>
-              <li class="sub1"><a href="order.html">ご注文</a></li>
+              <li class="sub1"><a href="order.php">ご注文</a></li>
             </ul>
           </li>
-          <li><a href="fussy.html">こだわり</a></li>
-          <li><a href="store.html">店舗情報</a></li>
-          <li><a href="qa.html">よくあるご質問</a></li>
+          <li><a href="fussy.php">こだわり</a></li>
+          <li><a href="store.php">店舗情報</a></li>
+          <li><a href="qa.php">よくあるご質問</a></li>
           <li class="separator cart"><a href="#">カートを見る</a></li>
           <li class="separator"><a href="#">ログイン</a></li>
           <li class="separator"><a href="#">会員登録</a></li>
@@ -69,8 +94,8 @@
     <div class="order-left">
       <p><img src="images/plate.png" width="468" height="468" alt="お皿" id="plate"></p>
       <div id="topping-01">
-        <img src="images/topping-pan.png" width="335" height="335" alt="全粒粉パン" id="pan-brown">
         <img src="images/topping-pan_white.png" width="335" height="335" alt="食パン" id="pan-white">
+        <img src="images/topping-pan.png" width="335" height="335" alt="全粒粉パン" id="pan-brown">
         <img src="images/topping-pan_low.png" width="335" height="335" alt="低糖質パン" id="pan-low">
         <img src="images/topping-leaf.png" width="335" height="335" alt="レタス" id="leaf">
         <img src="images/topping-tomato.png" width="335" height="335" alt="トマト" id="tomato">
@@ -80,17 +105,33 @@
         <img src="images/topping-beef.png" width="335" height="335" alt="ローストビーフ" id="beef">
         <img src="images/topping-egg.png" width="335" height="335" alt="卵" id="egg">
       </div>
+
+      <div class="total-price-box">
+        <div class="price">
+          <p>TOTAL</p>
+          <p>￥<span id="price"><?php echo $total ?></span></p>
+        </div>
+
+      <form action="check.php" method="post">
+        <input type="hidden" name="total" value="<?php echo $total; ?>">
+        <input type="hidden" name="pan_white" value="<?php echo $pan_white; ?>">
+        <input type="hidden" name="pan_brown" value="<?php echo $pan_brown; ?>">
+        <input type="hidden" name="pan_low" value="<?php echo $pan_low; ?>">
+        数量：<input type="number" name="number" class="number"><br>
+        <input type="image" name="submit-img" src="images/order-cartIn.svg" width="250" height="47" alt="カートに入れるボタン" id="submit-btn">
+<!--                <input type="submit" name="photo" src="images/order-cartIn.svg" width="300" height="47" alt="カートに入れるボタン" value="カートに入れる">-->
+      </form>
+      </div><!--/total-price-->
     </div><!--/order-left-->
 
     <div class="panel-area">
       <div id="panel1" class="tab-panel">
         <div class="custom-content">
           <p class="panel-01-title"><span>1.&nbsp;</span>パンメニュー&nbsp;</p>
-          <form>
             <div class="topping-box">
-              <input id="pan-white-btn" type="radio" name="pan" value="8" onclick="priceShow()">
+              <input id="pan-white-btn" type="radio" name="pan" value="8">
               <label for="pan-white-btn">
-              <img src="images/topping-pan_white.png" width="100" height="100" alt="#" id="thum-pan-white">
+              <img src="images/topping-pan_white.png" width="100" height="100" alt="食パン" id="thum-pan-white">
               <p>食パン</p>
               </label>
             </div><!--/topping-box-->
@@ -105,16 +146,11 @@
             <div class="topping-box">
               <input id="pan-low-btn" type="radio" name="pan" value="10">
               <label for="pan-low-btn">
-              <img src="images/topping-pan_low.png" width="100" height="100" alt="#" id="thum-pan-low">
+              <img src="images/topping-pan_low.png" width="100" height="100" alt="低糖質パン" id="thum-pan-low">
               <p>低糖質パン</p>
               </label>
             </div><!--/topping-box-->
-          </form>
         </div><!--/custom-content-->
-        
-        <div class="total-price-box">
-          <p class="price">TOTAL<br>¥<span id="price"><?php echo $price?></span></p>
-        </div><!--/total-price-box-->
       </div><!--/panel1-->
 
       <div id="panel2" class="tab-panel">
@@ -168,48 +204,27 @@
             <input id="egg-btn" type="radio" name="side-topping" value="6">
             <label for="egg-btn">
               <div class="topping-box">
-                <img src="images/topping-egg.png" width="100" height="100" alt="卵" id="thum-egg">
+                <img src="images/topping-egg.png" width="100" height="100" alt="卵" id="thum-egg" class="submit-trigger">
                 <p>卵</p>
               </div><!--/topping-box-->
             </label>
             <input id="avo-btn" type="radio" name="side-topping" value="7">
             <label for="avo-btn">
               <div class="topping-box">
-                <img src="images/topping-avo.png" width="100" height="100" alt="アボカド" id="thum-avo">
+                <img src="images/topping-avo.png" width="100" height="100" alt="アボカド" id="thum-avo" class="submit-trigger">
                 <p>アボカド</p>
               </div><!--/topping-box-->
             </label>
           </div><!--/side-topping-->
 
         </div><!--/custom-content-->
-        <div class="total-price-box">
-          
-          <form action="2.php" method="post">
-            <div class="price">TOTAL￥:
-              
-              
-
-              
-            </div>
-            <input type="hidden" name="toral">
-            
-            数量：<input type="number" name="number" class="number">
-            
-            
-            
-            <input type="image" name="photo" src="images/order-cartIn.svg" width="300" height="47" alt="カートに入れるボタン">
-<!--                <input type="submit" name="photo" src="images/order-cartIn.svg" width="300" height="47" alt="カートに入れるボタン" value="カートに入れる">-->
-          </form>
-          
-          
-        </div><!--/total-price-->
       </div><!--/panel2-->
-            </div><!--/panel-area-->
+    </div><!--/panel-area-->
           </div><!--/tab-wrap-->
         
           <div class="return">
-            <p><a href="order.html" class="arrow back-arrow">初めから注文しなおす</a></p>
-            <p><a href="menu.html" class="arrow back-arrow">グランドメニューを注文する</a></p>
+            <p><a href="order.php" class="arrow back-arrow">初めから注文しなおす</a></p>
+            <p><a href="menu.php" class="arrow back-arrow">グランドメニューを注文する</a></p>
           </div><!--/return-->
         </section><!--/concept-->
       </div><!--/container-wrap-->

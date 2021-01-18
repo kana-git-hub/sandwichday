@@ -6,7 +6,6 @@ $(function(){
       .click(function(){
     $('#pan-brown')
       .fadeIn( 0 );
-      console.log( "price : " + price );
   });
   
     $('#thum-pan-white')
@@ -65,16 +64,30 @@ $(function(){
   $('.vege-topping')
       .click(function(){
     $('.main-topping')
-      .fadeIn( 0 )
+      .fadeIn( 0 );
   });
   
   $('.main-topping')
       .click(function(){
     $('.side-topping')
-      .fadeIn( 0 )
+      .fadeIn( 0 );
   });
   
+//  $('input#submit-btn')
+//  .fadeOut( 0 );
+//
+//  $('img.submit-trigger')
+//  .click(function(){
+//     $('input#submit-btn')
+//     .fadeIn( 0 );
+//   });
   
+  
+  $('img.submit-trigger')
+  .click(function(){
+     $('input#submit-btn')
+//     .attr('type','submit');
+   });
   
 
   
