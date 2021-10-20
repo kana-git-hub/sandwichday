@@ -1,5 +1,3 @@
-<!--<?php var_dump( $_POST ); ?>-->
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -20,6 +18,6 @@
 
 <body class="check">
 
-<h2>ご注文いただきありがとうございました</h2>
+<h2>ご注文ありがとうございました！</h2>
 <?php
 echo $_POST['email-address']; ?>宛に確認メールを送りました。

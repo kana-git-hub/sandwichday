@@ -6,7 +6,6 @@
   $pan_leaf = 5;
 
   $total = 0;
-//  $total = $pan_white + $pan_brown + $pan_low;
 ?>
 
 <!DOCTYPE html>
